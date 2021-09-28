@@ -7,26 +7,71 @@
   </head>
   <body>
     <form>
+      <caption>
+        Formulaire d'inscription
+      </caption>
       <ul>
-        <li>Nom <input type="text" placeholder="nom" /></li>
-        <li>Prénom <input type="text" placeholder="prénom" /></li>
-        <li>Lieu de naissance <input type="text" /></li>
-        <li>Date de naissance <input type="date" /></li>
-        <li>Pays d'origine <input type="text" /></li>
+        <li>
+          Nom
+          <input type="text" placeholder="nom" />
+        </li>
+        <li>Prénom<input type="text" placeholder="prénom" /></li>
+        <li>
+          <label for="lieu">Lieu de naissance</label>
+          <input id="lieu" type="text" />
+        </li>
+        <li>
+          <label for="date">Date de naissance</label>
+          <input id="date" type="date" />
+        </li>
+        <li>
+          <label for="pays">Pays d'origine</label>
+          <select>
+            <option>France</option>
+            <option>Angleterre</option>
+            <option>Italie</option>
+            <option>Allemagne</option>
+            <option>Espagne</option>
+            <option>Belgique</option>
+            <option>Portugal</option>
+          </select>
+        </li>
         <li>
           Civilité :
-          <select name="civilité" size="1">
-            <option>Monsieur</option>
+          <select>
             <option>Madame</option>
+            <option>Monsieur</option>
           </select>
         </li>
 
-        <li>Moyenne au BAC <input type="number" /></li>
-        <li>Formation <input type="text" /></li>
-        <li>Autres formations <input type="text" /></li>
-        <li>Adresse email <input type="mail" /></li>
-        <li>Numéro de téléphone <input type="tel" /></li>
-        <li>Lettre de motivation <input type="file" /></li>
+        <li>
+          <label for="note">Moyenne au BAC</label>
+          <input id="note" type="number" max="20" />
+        </li>
+        <li>
+          <label for="formation">Formation</label>
+          <select>
+            <option>Chimie</option>
+            <option>Physique</option>
+            <option>Biologie</option>
+            <option>Math-Info</option>
+            <option>Lettres Moderne</option>
+            <option>Histoires appliquées</option>
+          </select>
+        </li>
+        <li>
+          <label for="autres">Autres formations</label>
+          <input id="autres" type="text" />
+        </li>
+        <li>
+          Adresse email
+          <input type="mail" placeholder="abc@def.com" />
+        </li>
+        <li>
+          Numéro de téléphone
+          <input type="tel" placeholder="01 23 45 56 78" />
+        </li>
+        <li>Lettre de motivation<input type="file" /></li>
       </ul>
     </form>
   </body>
