@@ -14,6 +14,14 @@ tr > th {
   color: white;
 }
 
+.year {
+  font-weight: 700;
+  text-align: center;
+}
+.event {
+  padding-left: 1em;
+}
+
 .table {
   border: none;
 }
@@ -23,7 +31,17 @@ tr > th {
 }
 
 .figure {
+  border: solid 1px red;
+  border-radius: 1%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
   display: block;
+  background-color: rgb(39, 39, 39);
+}
+.legend {
+  color: white;
+  text-align: center;
 }
 .img {
   width: 100%;
@@ -41,7 +59,8 @@ tr + td {
 }
 
 .end-text {
-  margin: 0 15em 5em 15em;
-  border: dotted rgb(76, 76, 219);
+  margin: 0 10em 3em 10em;
+  padding: 0 1em 0 1em;
+  border: 3px dashed rgb(76, 76, 219);
   background-color: rgb(197, 197, 197);
 }
