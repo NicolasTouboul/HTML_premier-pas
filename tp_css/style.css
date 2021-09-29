@@ -1,43 +1,53 @@
 body {
-  margin: 0 15em 0 15em;
+  margin: 0 10em 8em 10em;
   font-family: "Assistant", sans-serif;
-  background-color: rgb(230, 228, 228);
+  background-color: #c8c8c8;
 }
 .header {
   text-align: center;
+  font-family: Georgia, serif;
 }
-.table_container {
+
+.link {
+  color: red;
+  font-weight: bold;
+}
+.table {
+  border-collapse: collapse;
 }
 
 tr > th {
-  background-color: black;
+  background-color: #333333;
   color: white;
+  padding: 0.5em 0 0.5em 0.5em;
+}
+tbody > tr:nth-child(odd) {
+  background-color: #dddddd;
 }
 
-.year {
+tbody > tr:hover {
+  background-color: #999999;
+  cursor: pointer;
+}
+
+td:nth-child(odd) {
   font-weight: 700;
   text-align: center;
-}
-.event {
-  padding-left: 1em;
 }
 
 .table {
   border: none;
-}
-
-.white_cell {
-  background-color: white;
+  width: 100%;
 }
 
 .figure {
-  border: solid 1px red;
+  border: solid 2px red;
   border-radius: 1%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-top: 1em;
-  display: block;
-  background-color: rgb(39, 39, 39);
+
+  background-color: #333333;
 }
 .legend {
   color: white;
@@ -49,18 +59,13 @@ tr > th {
 
 .red_title {
   color: red;
-}
-
-tr + td {
-  background-color: black;
-}
-
-.figure {
+  font-family: Georgia, serif;
 }
 
 .end-text {
-  margin: 0 10em 3em 10em;
+  margin: 0 7em 3em 7em;
   padding: 0 1em 0 1em;
-  border: 3px dashed rgb(76, 76, 219);
-  background-color: rgb(197, 197, 197);
+  border: 3px dashed #6b64b3;
+  background-color: rgba(177, 173, 173, 0.76);
+  color: #6b64b3;
 }
