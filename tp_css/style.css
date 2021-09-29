@@ -1,0 +1,9 @@
+body {
+  font-family: "Assistant", sans-serif;
+}
+.table {
+  border: 1 solid;
+}
+tr + td {
+  background-color: black;
+}
