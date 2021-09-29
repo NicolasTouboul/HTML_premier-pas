@@ -1,9 +1,47 @@
 body {
+  margin: 0 15em 0 15em;
   font-family: "Assistant", sans-serif;
+  background-color: rgb(230, 228, 228);
 }
+.header {
+  text-align: center;
+}
+.table_container {
+}
+
+tr > th {
+  background-color: black;
+  color: white;
+}
+
 .table {
-  border: 1 solid;
+  border: none;
 }
+
+.white_cell {
+  background-color: white;
+}
+
+.figure {
+  display: block;
+}
+.img {
+  width: 100%;
+}
+
+.red_title {
+  color: red;
+}
+
 tr + td {
   background-color: black;
+}
+
+.figure {
+}
+
+.end-text {
+  margin: 0 15em 5em 15em;
+  border: dotted rgb(76, 76, 219);
+  background-color: rgb(197, 197, 197);
 }
