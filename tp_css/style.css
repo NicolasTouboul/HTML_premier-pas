@@ -1,5 +1,5 @@
 body {
-  margin: 0 10em 8em 10em;
+  margin: 0 10rem 8rem 10rem;
   font-family: "Assistant", sans-serif;
   background-color: #c8c8c8;
 }
@@ -19,7 +19,7 @@ body {
 tr > th {
   background-color: #333333;
   color: white;
-  padding: 0.5em 0 0.5em 0.5em;
+  padding: 0.5rem 0 0.5rem 0.5rem;
 }
 tbody > tr:nth-child(odd) {
   background-color: #dddddd;
@@ -43,9 +43,9 @@ td:nth-child(odd) {
 .figure {
   border: solid 2px red;
   border-radius: 1%;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  margin-top: 1em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
 
   background-color: #333333;
 }
@@ -63,8 +63,8 @@ td:nth-child(odd) {
 }
 
 .end-text {
-  margin: 0 7em 3em 7em;
-  padding: 0 1em 0 1em;
+  margin: 0 7rem 3rem 7rem;
+  padding: 0 1rem 0 1rem;
   border: 3px dashed #6b64b3;
   background-color: rgba(177, 173, 173, 0.76);
   color: #6b64b3;
