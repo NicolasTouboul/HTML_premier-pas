@@ -51,3 +51,19 @@ do {
     alert("Mot de passe enregistré");
   }
 } while (mdp.length < 8);
+
+//break
+for (let i = 1; i <= 100; i++) {
+  if (i == 50) {
+    break;
+  }
+  console.log(i);
+}
+
+//continue
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0) {
+    continue;
+  }
+  console.log(i);
+}
