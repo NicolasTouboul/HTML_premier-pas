@@ -5,8 +5,8 @@ do {
   var mailtent = prompt("Entrez votre adresse email");
   var mdptent = prompt("Entrez votre mot de passe");
   if (mail != mailtent || mdp != mdptent) {
-    alert("réessayez");
+    alert("Identifiants incorrect");
   } else {
-    alert("bien joué");
+    alert("Bienvenu dans votre espace client");
   }
 } while (mail != mailtent || mdp != mdptent);
