@@ -30,4 +30,4 @@ for (let i = 0; i < taille; i++) {
   console.log(matrice[i].toString());
 }
 
-console.log(La somme des diagonales est de ${sommeDiag});
+console.log(`La somme des diagonales est de ${sommeDiag}`);
