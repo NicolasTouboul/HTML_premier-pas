@@ -1,0 +1,81 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  text-align: center;
+  grid-auto-rows: 50px;
+  grid-template-areas: "logo services expertise contact";
+  border: black solid 1px;
+  padding: 5px;
+}
+
+.child_head {
+  border: solid black 1px;
+  font-size: large;
+}
+
+.child_head:nth-child(1) {
+  grid-area: logo;
+}
+
+.child_head:nth-child(2) {
+  grid-area: services;
+}
+
+.child_head:nth-child(3) {
+  grid-area: expertise;
+}
+
+.child_head:nth-child(4) {
+  grid-area: contact;
+}
+
+.img {
+  margin: 10px 0 10px 0;
+  border: black solid 1px;
+  height: 200px;
+  text-align: center;
+}
+
+.container {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  text-align: center;
+  grid-auto-rows: 100px 100px 100px;
+  grid-template-areas:
+    "propos propos lien1"
+    "propos propos lien1"
+    "propos propos lien2";
+}
+
+.child_cont {
+  border: black solid 1px;
+  font-size: large;
+}
+
+.child_cont:nth-child(1) {
+  grid-area: propos;
+}
+.child_cont:nth-child(2) {
+  grid-area: lien1;
+}
+.child_cont:nth-child(3) {
+  grid-area: lien2;
+}
+
+.footer {
+  margin: 10px 0 5px 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5px;
+  text-align: center;
+  grid-auto-rows: 100px;
+  grid-template-areas: "pied";
+  border: black solid 1px;
+}
+.child_foot {
+  grid-area: pied;
+  text-align: center;
+}
