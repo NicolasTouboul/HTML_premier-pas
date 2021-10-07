@@ -121,9 +121,14 @@ li > a {
 
 .container_table {
   overflow-x: auto;
+  max-width: 650px;
 }
 .table {
   background-color: white;
+}
+.msg-err {
+  color: red;
+  font-style: italic;
 }
 
 @media all and (max-width: 780px) {
