@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bac à sable TPs JS</title>
+    <link rel="icon" type="image/jpg" href="images/travauxPratique.jpg" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Let's Go !</h1>
+    <p id = "err-formulaire"></p>
+    <!-- Formulaire d'inscription -->
+    <form id="fiche-inscription" method="POST">
+      <!-- nom prénom  -->
+      <p >
+        <div id="nom-err"></div>
+        <label for="nom">Nom : </label>
+        <input type="text" id="nom" placeholder="Ex : Dupont" />
+        <label for="prenom">Prénom : </label>
+        <input type="text" id="prenom" placeholder="Ex : Didier" />
+      </p>
+      <!-- age  -->
+      <p><div class="msg-err" id="err-age"></div>
+        <label for="age">Age : </label>
+        <input type="number" id="age" />
+      </p>
+      <!-- genre -->
+      <p>
+        <div class="msg-err" id="err-genre"></div>
+        Genre :
+        <label for="genre-m">M</label>
+        <input type="radio" id="genre-m" name="genre" />
+        <label for="genre-f">F</label>
+        <input type="radio" id="genre-f" name="genre" />
+      </p>
+      <!-- pays -->
+      <p><div class="msg-err" id="err-pays"></div>
+        <label for="pays">Pays : </label>
+        <input type="text" id="pays" placeholder="Ex : France" />
+      </p>
+      <!-- option -->
+      <p>
+        <div class="msg-err" id="err-option"></div>
+        <label for="option">Option : </label>
+        <input type="text" id="option" placeholder="Ex : Maths" />
+      </p>
+      <!-- Modifiable -->
+      <p>
+        <div class="msg-err" id="err-modifiable"></div>
+        Nom, prénom et option modifiables ? :
+        <label for="modifiable-true">Oui</label>
+        <input type="radio" id="modifiable-true" name="modifiable" />
+        <label for="modifiable-false">Non</label>
+        <input type="radio" id="modifiable-false" name="modifiable" />
+      </p>
+      <!-- Liste des cours -->
+      <p>
+        <div class="msg-err" id="err-cours"></div>
+        <div>
+          Liste des cours :
+          <ul id = "liste-cours">
+          </ul>
+        </div>
+        <div>
+          <input type="text" id="ajout-cours" placeholder="Informatique" />
+          <button type="button" id = "btn-cours">Ajouter cours</button>
+        </div>
+      </p>
+      <!-- sumit -->
+      <button type="button" id="btn-valider">Valider</button>
+    </form>
+
+    <!-- Tableau des étudiants -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Age</th>
+          <th>Genre</th>
+          <th>Pays</th>
+          <th>Option</th>
+          <th>Modifiable</th>
+          <th>Cours</th>
+        </tr>
+      </thead>
+      <tbody id="tableau-etudiants">
+      </tbody>
+    </table>
+
+    <script src="TP26.js"></script>
+  </body>
+</html>
