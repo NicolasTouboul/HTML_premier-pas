@@ -106,13 +106,14 @@ li > a {
   padding: 1rem 2rem 1rem 2rem;
   margin: 1rem auto 1rem auto;
   border: black solid 1px;
+  min-width: 100%;
 }
 
 #bio {
   width: 100%;
 }
 
-.border1 {
+.voir-etudiant {
   border: black solid 1px;
   padding: 1rem;
   background-color: white;
